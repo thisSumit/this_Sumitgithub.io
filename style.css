@@ -492,6 +492,9 @@ footer button{
         position: inherit;
         width: 10cm;
     }
+    .wave{
+        display: none;
+    }
     .bio{
         position: inherit;
     }
