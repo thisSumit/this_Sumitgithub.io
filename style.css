@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&family=Lora&family=Playfair+Display&display=swap');
+@font-face {
+    font-family: elnath;
+    /* for bigger heading */
+    src: url(/Users/sumitkaranjekar/code/portfolioo/elnath/ELNATH.ttf);
+}
+@font-face {
+    font-family: robtronika; 
+    /* for some heading little */
+    src: url(/Users/sumitkaranjekar/code/portfolioo/robtronika-font/Robtronika-4Bq8p.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+body{
+    font-size: 18px;
+}
+
+#home-page{
+    height: 100vh;
+    background: #1d1d1d;
+}
+nav{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo p{
+    color: #ff3c3c;
+    font-family: robtronika;
+    cursor: pointer;
+}
+.nav-links{
+    display: flex;
+}
+.nav-links li{
+    letter-spacing: 2px;
+    list-style: none;
+    margin: 2vw;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-links li a:hover{
+    color: #ff3c3c;
+    text-decoration: line-through;
+}
+.head{
+    padding: 1vw 5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#time, #date{
+    color: #999;
+}
+.text h1{
+    font-size: 30px;
+    color: rgb(221, 221, 221);
+    line-height: 2cm;
+}
+.text p{
+    font-family: robtronika;
+    color: #ff3c3c;
+    font-size: 20px;
+}
+.text span1{
+    font-size: 35px;
+    font-family: elnath;
+}
+.text h1 span{
+    font-family: elnath;
+    font-size: 2cm;
+}
+.img{
+    margin: 30px 0 10px 30px;
+    background-color: #ff3c3c;
+    border-start-end-radius: 55px;
+    width: 50vh;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.bio{
+    position: absolute;
+}
+.bio h2{
+    font-size: 2pc;
+    font-family: robtronika;
+    margin: 10px;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(139% + 1.3px);
+    height: 70px;
+}
+
+.wave .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* WORKWORKWORKWORKWORKWORK */
+#work-page{
+    height: 100%;
+    padding: 40px 0px;
+    border-bottom: solid black 3px;
+}
+#work-page h2{
+    padding: 60px 0 0 3vw;
+    font-family: robtronika;
+    font-size: 30px;
+    color: #ff3c3c;
+}
+#work-page p{
+    margin: 30px 6vw 30px 6vw;
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-45%);
+    }
+}
+@keyframes pslide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-1820px);
+    }
+}
+@keyframes vslide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+.logos{ 
+    overflow: hidden;
+    display: grid;
+    grid-row: inherit;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+.logos h4{
+    margin: 25px 0 10px 2vw;    
+    font-family: elnath;
+    font-size: 25px;
+    color: #ff3c3c;
+}
+.logos-slide{
+    margin-bottom: 3vw;
+    padding: 50px;
+    border: solid black 1px;
+    display: flex;
+    align-items: center;
+    background: #1d1d1d;
+}
+.website{
+    animation: 10s slide infinite linear;
+}
+.photo{
+    animation: 5s pslide infinite linear;
+}
+.video{
+    animation: 7.5s vslide infinite linear;
+}
+.logos::after,
+.logos::before{
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+    content: "";
+    z-index: 2;
+}
+.logos::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+}
+.logos::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+}
+.video:hover,
+.photo:hover, 
+.website:hover{
+    animation-play-state: paused;
+}
+.logos-slide a h3{
+    text-decoration: none;
+    font-family: elnath;
+    font-size: 40px;
+    color: white;
+    margin: 0 25px;
+}
+.logos-slide a{
+    text-decoration: none;
+}
+#shape{
+    height: 100px;
+    width: 200px;
+    border: solid black 1px;
+    border-radius: 50px;
+    background: white;
+    box-shadow: solid black 2px 8px 5px;
+}
+
+/* ABOUTABOUTABOUTABOUTABOUTABOUT */
+#about{
+    height: 100%;
+    padding: 40px 0px;
+    background: url('./image/wavve.svg');
+    aspect-ratio: 80/20;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.about img{
+    object-fit: cover;
+}
+#about h2{
+    padding: 60px 0 40px 3vw;
+    font-family: robtronika;
+    font-size: 30px;
+    color: #ff3c3c;
+}
+.about-me{
+    margin:0 8vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.bio-img{
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bio-img img{
+    height: 650px;
+    border: solid black 2px ;
+}
+.text-about{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.bio-text{
+    margin: 0 6vw;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 1) 0px 1px 4px;
+    background-color: #ffffff;
+    opacity: 0.9;
+}
+.bio-text h4{
+    margin: 15px 0;
+    font-size: 22px;
+}
+.bio-text h3{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: elnath;
+}
+.bio-text h5{
+    margin: 30px 0 0 0;
+    padding: 15px;
+    border:solid #1d1d1d 1px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: fit-content;
+    background-color: #ff3c3c;
+    color: black;
+}
+.bio-text h5 a{
+    color: black;
+    font-weight: 500;
+    font-family: robtronika;
+    text-decoration: none;
+}
+.skills{
+    margin: 0 6vw;
+    padding: 10px;
+    display: grid;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap: 15px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 1px 4px;
+    background-color: #999;
+    opacity: 0.9;
+}
+.qoute{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    margin: 50px 6vw;
+    padding: 15px;
+    background-color: #1d1d1d;
+    border-radius: 0 30px 0 30px;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+footer button{
+    padding: 10px;
+    background-color: whitesmoke;
+    color: #1d1d1d;
+    cursor: pointer;
+}
+
+/* ContactContactContact */
+#contact{
+    height: 120vh;
+    color: #FFFFFF;
+    background-color: #1d1d1d;
+}
+#contact h2{
+    padding: 100px 0 40px 3vw;
+    font-family: robtronika;
+    font-size: 30px;
+    color: #ff3c3c;
+}
+.connect{
+    margin: 3vw;
+}
+.soc-con h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 120px;
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 30px;
+    color: black;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: #000000;
+}
+.soc-con h4 a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.soc-con h4:hover{
+    background-color: #1d1d1d;
+    color: #FFFFFF;
+}
+.social-con{
+    display: flex;
+    justify-content: space-between;
+}
+.soc-con p{
+    margin: 50px 0;
+}
+.soc-con p a{
+    color: #FFFFFF;
+    background-color: #ff3c3c;
+    opacity: 0.8;
+    padding: 10px;
+    text-underline-offset: 3px;
+}
+.spacer{
+    aspect-ratio: 960/300;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.layer{
+    background-image: url('./image/wave-haikei.svg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.layer h3{
+    font-family: robtronika;
+    font-size: 20px;
+}
+.layer form{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}   
+.layer input{
+    padding: 12px;
+    width: 25vw;
+    border: solid black 2px;
+    border-radius: 50px;
+    font-size: 15px;
+    opacity: 0.8;
+}
+.btn-submit{
+    font-size: 15px;
+    padding: 15px;
+    background-color: #1d1d1d;
+    color: #FFFFFF;
+    border-radius: 50px;
+    margin-left: 20px;
+    cursor: pointer;
+    border: solid black 2px;
+}
+.btn-submit:hover{
+    background-color: #bebebe;
+    color: #1d1d1d;
+}
+.last-page{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin: 8vw 2vw;
+}
+
+
+
+/* FOR SMALL SCREENFOR SMALL SCREENFOR SMALL SCREENFOR SMALL SCREEN */
+
+@media screen and (max-width:768px) {
+    body{
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+    #home-page{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .head{
+        display: flex;
+        flex-direction: column;
+    }
+    .text h1{
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .text h1 span1{
+        font-size: 25px;
+    }
+    .text h1 span{
+        font-size: 30px;
+    }
+    .img{
+        width: 9.2cm;
+        margin: 20px;
+    }
+    
+    .nav-links li {
+        
+        opacity: 1;
+    }
+    .nav-links li a:hover{
+        color: #ff3c3c;
+    }
+    .img img{
+        position: inherit;
+        width: 10cm;
+    }
+    .bio{
+        position: inherit;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-text{
+        width: 85%;
+        margin: 20px;
+    }
+    .about-img{
+        width: 9cm;
+    }
+    .my-bio{
+        width: 9cm;
+        margin: 8px;
+    }
+    .about-me{
+        display: block;
+    }
+    .social-con{
+        display: block;
+    }
+    .spacer{
+        width: 100%;
+        aspect-ratio: 400/300;
+    }
+    .spacer h3{
+        margin-left: 20px;
+    }
+    .layer input{
+        width: 250px;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
