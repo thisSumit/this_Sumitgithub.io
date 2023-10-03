@@ -196,23 +196,6 @@ nav{
 .video{
     animation: 7.5s vslide infinite linear;
 }
-.logos::after,
-.logos::before{
-    position: absolute;
-    width: 50px;
-    height: 100%;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
-    content: "";
-    z-index: 2;
-}
-.logos::before{
-    left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255));
-}
-.logos::after{
-    right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
-}
 .video:hover,
 .photo:hover, 
 .website:hover{
@@ -506,8 +489,8 @@ footer button{
         width: 85%;
         margin: 20px;
     }
-    .about-img{
-        width: 6cm;
+    .about-img img{
+        width: 5cm;
     }
     .my-bio{
         width: 9cm;
@@ -529,8 +512,4 @@ footer button{
     .layer input{
         width: 250px;
     }
-}
-
-.nav-active{
-    transform: translateX(0%);
 }
