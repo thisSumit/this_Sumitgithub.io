@@ -51,6 +51,7 @@ nav{
 .nav-links li a{
     text-decoration: none;
     color: white;
+    transition: 0.5s;
 }
 .nav-links li a:hover{
     color: #ff3c3c;
@@ -288,6 +289,10 @@ nav{
     width: fit-content;
     background-color: #ff3c3c;
     color: black;
+    transition: 0.5s;
+}
+.bio-text h5:hover{
+    background-color: #e0e0e0;
 }
 .bio-text h5 a{
     color: black;
@@ -323,8 +328,8 @@ header{
     flex-direction: column;
 }
 footer button{
+    background-color: #bebebe;
     padding: 10px;
-    background-color: whitesmoke;
     color: #1d1d1d;
     cursor: pointer;
 }
@@ -357,14 +362,14 @@ footer button{
     cursor: pointer;
     border: 2px solid white;
     background-color: #000000;
+    transition: 0.5s;
 }
 .soc-con h4 a{
     color: #ffffff;
     text-decoration: none;
 }
 .soc-con h4:hover{
-    background-color: #1d1d1d;
-    color: #FFFFFF;
+    background-color: #ff3c3c;
 }
 .social-con{
     display: flex;
@@ -420,9 +425,10 @@ footer button{
     margin-left: 20px;
     cursor: pointer;
     border: solid black 2px;
+    transition: 0.5s;
 }
 .btn-submit:hover{
-    background-color: #bebebe;
+    background-color: #e6e6e6;
     color: #1d1d1d;
 }
 .last-page{
