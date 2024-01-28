@@ -1,7 +1,3 @@
-import LocomotiveScroll from 'locomotive-scroll';
-
-const locomotiveScroll = new LocomotiveScroll();
-
 function updateTime() {
     const hour = new Date().getHours();
     var greeting;
