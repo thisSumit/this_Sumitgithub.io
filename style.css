@@ -518,4 +518,7 @@ footer button{
     .layer input{
         width: 250px;
     }
+    .btn-submit{
+        margin-left: 10px;
+    }
 }
