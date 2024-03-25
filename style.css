@@ -25,6 +25,10 @@ body{
 #home-page{
     height: 100vh;
     background: #1d1d1d;
+    background-size: 100px 100px;
+    background-image:
+    linear-gradient(to right, rgb(241, 241, 241) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(244, 244, 244) 1px, transparent 1px);
 }
 nav{
     display: flex;
