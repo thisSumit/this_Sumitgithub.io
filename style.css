@@ -3,12 +3,12 @@
 @font-face {
     font-family: elnath;
     /* for bigger heading */
-    src: url(/elnath/ELNATH.ttf);
+    src: url(elnath/ELNATH.ttf);
 }
 @font-face {
     font-family: robtronika; 
     /* for some heading little */
-    src: url(/robtronika-font/Robtronika-4Bq8p.ttf);
+    src: url(robtronika-font/Robtronika-4Bq8p.ttf);
 }
 *{
     padding: 0;
@@ -435,7 +435,7 @@ footer button{
     display: flex;
     align-items: end;
     justify-content: center;
-    margin: 8vw 2vw;
+    margin: 3vw 1vw;
 }
 
 
