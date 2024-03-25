@@ -3,12 +3,12 @@
 @font-face {
     font-family: elnath;
     /* for bigger heading */
-    src: url(/Users/sumitkaranjekar/code/portfolioo/elnath/ELNATH.ttf);
+    src: url(/elnath/ELNATH.ttf);
 }
 @font-face {
     font-family: robtronika; 
     /* for some heading little */
-    src: url(/Users/sumitkaranjekar/code/portfolioo/robtronika-font/Robtronika-4Bq8p.ttf);
+    src: url(/robtronika-font/Robtronika-4Bq8p.ttf);
 }
 *{
     padding: 0;
