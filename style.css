@@ -132,8 +132,8 @@ nav{
     border-bottom: solid black 3px;
     background-size: 85px 85px;
     background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.4) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 1px, transparent 1px);
+    linear-gradient(to right, rgba(235, 235, 235, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(235, 235, 235, 0.4) 1px, transparent 1px);
 }
 #work-page h2{
     padding: 60px 0 0 3vw;
